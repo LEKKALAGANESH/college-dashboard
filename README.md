@@ -147,7 +147,7 @@ college-dashboard/
 
 ## 🌐 Deployment
 
-The application is deployed on Vercel and can be accessed at: [https://college-dashboard.vercel.app](https://college-dashboard.vercel.app)
+The application is deployed on Vercel and can be accessed at: [https://college-dashboard-rho.vercel.app/](https://college-dashboard-rho.vercel.app/)
 
 ## 📂 Repository
 
