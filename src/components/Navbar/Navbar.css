@@ -64,3 +64,20 @@
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
 }
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease-out;
+}
+
+.theme-toggle-btn:hover {
+    color: var(--primary-color);
+}

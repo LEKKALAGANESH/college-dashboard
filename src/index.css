@@ -12,7 +12,15 @@
   --star-color: #FFD700;
 }
 
-/* We will add Dark Mode variables here later */
+/* Dark Mode variables */
+.dark {
+  --background-color: #1a1a1a;
+  --card-background-color: #2a2a2a;
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #cccccc;
+  --border-color: #444444;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+}
 
 * {
   box-sizing: border-box;

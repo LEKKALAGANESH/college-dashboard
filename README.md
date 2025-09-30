@@ -20,6 +20,7 @@ A modern, responsive college dashboard built with React that allows users to exp
 - **⭐ Favorites Management**: Add/remove colleges to/from favorites list
 - **📝 Reviews System**: Submit reviews with star ratings and comments, view latest reviews
 - **🚪 Logout Page**: Simple logout confirmation
+- **🌙 Dark/Light Mode Toggle**: Switch between dark and light themes for better user experience
 - **📱 Responsive Design**: Mobile-friendly interface using Tailwind CSS
 - **⚡ Fast Loading**: Built with Vite for optimal performance
 

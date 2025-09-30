@@ -1,8 +1,7 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -34,6 +33,11 @@ const Navbar = () => {
                         <NavLink to="/logout" className="nav-link">
                             Logout
                         </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <button className="theme-toggle-btn" onClick={toggleTheme}>
+                            {theme === 'light' ? '🌙' : '☀️'}
+                        </button>
                     </li>
                 </ul>
             </div>
