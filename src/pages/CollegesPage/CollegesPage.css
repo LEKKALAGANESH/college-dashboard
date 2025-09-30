@@ -1,0 +1,106 @@
+.colleges-page-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    /* Fixed sidebar, flexible content */
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Filter Sidebar */
+.filter-bar {
+    background-color: var(--card-background-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    position: sticky;
+    top: 80px;
+    /* 60px navbar + 20px margin */
+}
+
+.filter-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-primary-color);
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary-color);
+}
+
+.filter-group input[type="search"],
+.filter-group input[type="number"],
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+}
+
+.fee-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Main Content Area */
+.colleges-content {
+    width: 100%;
+}
+
+.colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Utility Styles */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 5rem auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message,
+.no-results-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary-color);
+    padding: 3rem;
+    background-color: var(--card-background-color);
+    border-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .colleges-page-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-bar {
+        position: static;
+    }
+}
